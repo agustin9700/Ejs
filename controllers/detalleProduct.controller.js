@@ -34,6 +34,6 @@ module.exports = function (req, res) {
         return producto.id === parseInt(idMenu);
     });
 
-    // Pasa los datos del producto seleccionado a la vista
+    
     res.render("detalleMenu", { "productoSeleccionado": productoSeleccionado });
 };
