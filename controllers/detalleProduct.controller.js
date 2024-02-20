@@ -29,6 +29,6 @@ module.exports= function(req,res){
     const productoSeleccionado = infoProduct.find(function(producto) {
         return producto.id === parseInt(idMenu);
     });
-    res.render("detalle")
+    res.render("detalleMenu")
 
 }
