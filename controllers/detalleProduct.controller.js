@@ -26,7 +26,7 @@ module.exports = function (req, res) {
         nombre: "Espárragos Blancos",
         detalle: "Espárragos blancos con vinagreta de verduras y jamón ibérico",
         precio: 4000,
-        imagen: "/images/esparragos.jpg"  
+        imagen: "/images/esparragos.png"  
     }
 ];
     const idMenu = req.params.id;
