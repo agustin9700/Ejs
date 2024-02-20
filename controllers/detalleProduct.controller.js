@@ -1,4 +1,4 @@
-module.exports= function(req,res){
+module.exports = function (req, res) {
     const infoProduct = [
         {
             id: 1,
@@ -24,11 +24,12 @@ module.exports= function(req,res){
             detalle: "Espárragos blancos con vinagreta de verduras y jamón ibérico",
             precio: 4000
         }
-    ]; 
+    ];
     const idMenu = req.params.id;
-    const productoSeleccionado = infoProduct.find(function(producto) {
+    const productoSeleccionado = infoProduct.find(function (producto) {
         return producto.id === parseInt(idMenu);
     });
-    res.render("detalleMenu")
 
-}
+    // Pasa los datos del producto seleccionado a la vista
+    res.render("detalleMenu", { producto: productoSeleccionado });
+};

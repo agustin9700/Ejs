@@ -5,7 +5,7 @@ const indexController = require("../controllers/");
 // Ruta para iniciar sesión
 
 router.get("/:id",indexController.detalleProduct);
-router.get("/",indexController.detalleProduct)
+
 
 
 

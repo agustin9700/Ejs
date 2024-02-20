@@ -7,7 +7,7 @@ app.use(express.static("public"));
 
 
 app.use("/", rutaHome);
-app.use("/detalle",rutaDetalle);
+app.use("/menu/detalle",rutaDetalle);
 
 
 app.set("view engine" ,"ejs");
